@@ -151,11 +151,13 @@ export default function Home() {
 
       <div className="mt-4">
         <a
-          href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot"
-          className="mt-10 inline-block px-10 py-5 text-xl bg-cyan-600 text-white rounded-2xl shadow-lg hover:bg-cyan-500 transition animate-pulse ring-4 ring-cyan-400 ring-offset-2 ring-offset-black drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]"
-        >
-          🚀 Invite Bot
-        </a>
+  href="https://discord.com/oauth2/authorize?client_id=1375408848428466227&permissions=8&scope=bot"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 inline-block px-10 py-5 text-xl bg-cyan-600 text-white rounded-2xl shadow-lg hover:bg-cyan-500 transition animate-pulse ring-4 ring-cyan-400 ring-offset-2 ring-offset-black drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]"
+>
+  🚀 Invite Bot
+</a>
       </div>
 
       <footer className="text-white/50 text-sm mt-20">
