@@ -1,39 +1,18 @@
-// app/layout.tsx
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Orbitron } from "next/font/google";
-import "./globals.css";
+// src/app/layout.tsx
+import "./../styles/globals.css";
+import { Orbitron } from "next/font/google";
 
-// Load fonts
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  variable: "--font-orbitron",
-});
-
-export const metadata: Metadata = {
-  title: "Loadout Bot",
-  description: "Browse and manage game loadouts directly in Discord.",
+export const metadata = {
+  title: "DeltaLoadouts Bot",
+  description: "A sleek Discord bot for managing game builds",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} bg-[#0f0f0f] text-white antialiased`}
-      >
+    <html lang="en" className="h-full bg-black text-white">
+      <body className={`${orbitron.variable} font-display antialiased min-h-screen`}>
         {children}
       </body>
     </html>
